@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.anthonyzero.api.vc.autoconfigure.ApiVersionAutoConfiguration
