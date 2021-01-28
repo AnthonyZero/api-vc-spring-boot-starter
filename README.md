@@ -1,7 +1,7 @@
-### api-vc-spring-boot-starter
+# api-vc-spring-boot-starter
 在用 SpringBoot 开发 RESTful API 时，如果你想为你的接口加上版本管理，那么现在你可以尝试使用@ApiVersion注解,通过在请求头加版本号帮你完成这项工作。
 
-### 项目使用
+## 项目使用
 在项目中pom.xml中添加依赖
 ```
     <dependency>
@@ -25,7 +25,7 @@
 > 如果依赖下载失败,可能是GitHub的raw.githubusercontent.com连接失败，请通过IPAddress.com首页,输入raw.githubusercontent.com查询到真实IP地址, 并保存到/etc/hosts。
 然后项目下进行mvn -U compile 强制让Maven检查所有依赖更新
 
-### 自动配置
+## 自动配置
 在项目配置文件中进行配置,同时也提供了默认配置值（default-version=1.0.0; param-name = x-api-version）
 ```
     api-version:
@@ -37,7 +37,7 @@ param-name的值代表通过拿到请求头的x-api-version的值 来获取请�
 
 > 版本格式：x.y.z格式
 
-### 特性
+## 特性
 @ApiVersion 功能特性
 * 使用方便，只需要一个注解即可在代码层面上区别版本
 * 支持在类或者方法上使用
@@ -48,7 +48,7 @@ param-name的值代表通过拿到请求头的x-api-version的值 来获取请�
   2. 默认请求头参数名称为x-api-version, 可以通过配置项 api-version.param-name 自定义参数名称
 
 
-### 演示
+## 演示
 现在有一个接口/index 有两个版本分别为1.0.0(默认) 和2.0.0
 ```
 @RestController
