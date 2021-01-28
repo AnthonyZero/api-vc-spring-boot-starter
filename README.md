@@ -44,7 +44,7 @@ param-name的值代表通过拿到请求头的x-api-version的值 来获取请�
   1. 优先级：方法 > 类
   2. 如果同时在类和方法上都加上了@ApiVersion,那么方法上指定的版本号会生效
 * 配置默认版本、自定义请求头参数
-  1. 默认前缀是1.0.0，可以通过配置项 api-version.default-version 进行修改。
+  1. 默认版本号是1.0.0，可以通过配置项 api-version.default-version 进行修改。
   2. 默认请求头参数名称为x-api-version, 可以通过配置项 api-version.param-name 自定义参数名称
 
 
